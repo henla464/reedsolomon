@@ -867,7 +867,9 @@ class RSCodec(object):
         if isinstance(data, str):
             data = bytearray(data)
         check = []
-        for chunk in self.chunk(data, self.nsize):
+        for i in xrange(0, len(data), self.nsize):
+            # Split the long message in a chunk
+            chunk = data[i:i+self.nsize]
             check.append(rs_check(chunk, nsym, fcr=self.fcr, generator=self.generator))
         return check
 
