@@ -45,14 +45,14 @@ except ImportError:
         extensions = None
 
 setup(name = "reedsolo",
-    version = "1.5.4",
+    version = "1.5.5",
     description = "Pure-Python Reed Solomon encoder/decoder",
     author = "Tomer Filiba",
     author_email = "tomerfiliba@gmail.com",
     maintainer = "Stephen Karl Larroque",
     maintainer_email = "lrq3000@gmail.com",
     license = "Public Domain",
-    url = "https://github.com/tomerfiliba/reedsolomon",
+    url = "https://github.com/henla464/reedsolomon",
     py_modules = ["reedsolo"],
     platforms = ["any"],
     long_description = open("README.rst", "r").read(),
